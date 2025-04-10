@@ -58,10 +58,8 @@
 
 .auth_input_container{
     display: flex;
-    flex-direction: row;
-    position: relative;
-    background-color: yellow;
-    
+    flex-direction: column;
+    position: relative;    
 }
 .toggle_icon{
     position: absolute;
@@ -93,4 +91,12 @@
 .auth_link:hover{
     color: #0051D4;
     text-decoration: none;
+}
+
+.error_msg{
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;
+    /* margin-bottom: 8px; */
+    margin-left: 16px;
 }

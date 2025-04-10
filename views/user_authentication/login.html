@@ -20,7 +20,7 @@
             or <a href="./register.html" class="auth_link">create an account</a>
           </p>
         </div>
-        <form>
+        <form id="login-form">
           <div class="auth_input_container">
             <input
               type="email"
@@ -28,9 +28,9 @@
               name="email"
               placeholder="Email"
               class="auth_input"
-              required
             />
           </div>
+          <p id="email-error" class="error_msg"></p>
           <br />
           <div class="auth_input_container">
             <input
@@ -39,7 +39,6 @@
               name="password"
               placeholder="Password"
               class="auth_input"
-              required
             />
             <img
               src="../../assets/img/eye_show.png"
@@ -49,6 +48,7 @@
               onclick="togglePasswordVisibility()"
             />
           </div>
+          <p id="password-error" class="error_msg"></p>
           <br />
           <button type="submit" class="auth_submit">Login</button>
         </form>
