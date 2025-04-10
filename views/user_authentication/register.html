@@ -37,22 +37,42 @@
             class="auth_input"
             required
           /><br /><br />
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Password"
-            class="auth_input"
-            required
-          /><br /><br />
-          <input
-            type="password"
-            id="confirm_password"
-            name="confirm_password"
-            placeholder="Confirm Password"
-            class="auth_input"
-            required
-          /><br /><br />
+          <div class="auth_input_container">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              class="auth_input"
+              required
+            />
+            <img
+              src="../../assets/img/eye_show.png"
+              alt="toggle icon"
+              class="toggle_icon"
+              id="toggle_icon"
+              onclick="togglePasswordVisibility()"
+            />
+          </div>
+          <br />
+          <div class="auth_input_container">
+            <input
+              type="password"
+              id="confirm_password"
+              name="confirm_password"
+              placeholder="Confirm Password" 
+              class="auth_input"
+              required
+            />
+            <img
+              src="../../assets/img/eye_show.png"
+              alt="toggle icon"
+              class="toggle_icon"
+              id="confirm_toggle_icon"
+              onclick="togglePasswordVisibility()"
+            />
+          </div>
+          <br />
           <button type="submit" class="auth_submit">Register</button>
         </form>
         <p>
@@ -62,5 +82,7 @@
         </p>
       </div>
     </section>
+
+    <script src="../../scripts/user_authentication/toggle_password.js"></script>
   </body>
 </html>
