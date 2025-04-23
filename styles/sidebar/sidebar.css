@@ -1,23 +1,116 @@
 #sidebar {
-    background-color: #927272;
-    /* padding: 20px; */
+    background-color: white;
+    padding: 12px;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     transition: all 0.3s ease;
-    border-right: 2px solid #000000;
+    border-right: 1px solid #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    overflow-x: visible;
 }
 
 #sidebar.collapsed {
-    width: 100px;
+    width: 75px;
 }
 
 #sidebar.expanded {
     width: 250px;
 }
 
+#sidebar-logo {
+    display: none;
+}
+
+#sidebar .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    gap: 14px;
+    color: #0061FF;
+}
+
+#sidebar .header img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+#sidebar .header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+}
+
 #main {
-    margin-left: 100px;
+    margin-left: 75px;
     transition: margin-left 0.3s ease;
+    width: 100%;
+}
+
+#sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#sidebar li {
+    list-style: none;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    /* height: 32px; */
+}
+#sidebar li:hover {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+#sidebar a:focus {
+    border: none;
+}
+
+#sidebar li img {
+    width: 18px;
+    height: 18px;
+    margin: 0px 16px 0px 8px;
+    /* justify-self: end; */
+    padding: 0px;
+    display: inline-block;
+}
+
+#sidebar li span {
+    display: block;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    padding: 0px;
+    /* align-self: start; */
+    /* padding-bottom: 2px; */
+}
+
+#sidebar li a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-decoration: none;
+    color: inherit;
+}
+
+.hide-text {
+    opacity: 0;
 }

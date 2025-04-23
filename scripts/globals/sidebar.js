@@ -3,6 +3,8 @@ function initSidebar() {
     const sidebar = document.getElementById("sidebar");
     const toggleBtn = document.getElementById("toggle-btn");
     const main = document.getElementById("main");
+    const sidebarLogo = document.getElementById("sidebar-logo");
+
 
     const isCollapsed = sidebar.classList.contains("collapsed");
 
@@ -10,11 +12,19 @@ function initSidebar() {
       sidebar.classList.remove("collapsed");
       sidebar.classList.add("expanded");
       main.style.marginLeft = 250 + "px";
+      sidebarLogo.style.display = "block";
     } else {
       sidebar.classList.remove("expanded");
       sidebar.classList.add("collapsed");
-      main.style.marginLeft = 100 + "px";
+      main.style.marginLeft = 75 + "px";
+      sidebarLogo.style.display = "none";
     }
+
+    const listItems = document.querySelectorAll("#sidebar li span");
+    listItems.forEach((span) => {
+      span.classList.toggle("hide-text");
+    });
+    
   };
 
   const toggleBtn = document.getElementById("toggle-btn");
