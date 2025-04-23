@@ -3,6 +3,7 @@ function initSidebar() {
   const main = document.getElementById("main");
   const sidebarLogo = document.getElementById("sidebar-logo");
   const toggleBtn = document.getElementById("toggle-btn");
+  const sidebarTooltips = document.querySelectorAll("#sidebar .sidebar-tooltip");
 
   const applySidebarState = (isCollapsed) => {
     if (isCollapsed) {
@@ -10,11 +11,17 @@ function initSidebar() {
       sidebar.classList.remove("expanded");
       main.style.marginLeft = "75px";
       sidebarLogo.style.display = "none";
+      sidebarTooltips.forEach((tooltip) => {
+        tooltip.style.display = "block";
+      });
     } else {
       sidebar.classList.add("expanded");
       sidebar.classList.remove("collapsed");
       main.style.marginLeft = "250px";
       sidebarLogo.style.display = "block";
+      sidebarTooltips.forEach((tooltip) => {
+        tooltip.style.display = "none";
+      });
     }
 
     const listItems = document.querySelectorAll("#sidebar li span");

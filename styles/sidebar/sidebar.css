@@ -112,8 +112,28 @@ a:focus {
     text-decoration: none;
     color: inherit;
     width: 100%;
+    position: relative;
 }
 
 .hide-text {
     opacity: 0;
+}
+
+.sidebar-tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    left: 2.8rem;
+}
+
+#sidebar li a:hover .sidebar-tooltip {
+    opacity: 1;
 }
