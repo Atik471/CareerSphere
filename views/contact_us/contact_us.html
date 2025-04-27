@@ -10,21 +10,21 @@
 
 <h2>Contact Us</h2>
 
-<form>
+<form onsubmit="return validateForm(event)">
   <fieldset>
     <legend>Contact Information</legend>
     <table>
       <tr>
         <td><label for="fullname">Full Name</label></td>
-        <td><input type="text" id="fullname" name="fullname" required /></td>
+        <td><input type="text" id="fullname" name="fullname" /></td>
       </tr>
       <tr>
         <td><label for="email">Email</label></td>
-        <td><input type="email" id="email" name="email" required /></td>
+        <td><input type="email" id="email" name="email" /></td>
       </tr>
       <tr>
         <td><label for="message">Message</label></td>
-        <td><textarea id="message" name="message" rows="4" required></textarea></td>
+        <td><textarea id="message" name="message" rows="4" ></textarea></td>
       </tr>
       <tr>
         <td colspan="2">
@@ -35,6 +35,7 @@
         </td>
       </tr>
     </table>
+    <p id="error"></p>
   </fieldset>
 </form>
 
