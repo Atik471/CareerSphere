@@ -137,3 +137,9 @@ a:focus {
 #sidebar li a:hover .sidebar-tooltip {
     opacity: 1;
 }
+
+/* .sidebar-btn a.active {
+    background-color: #3498db;
+    color: white;
+} */
+  

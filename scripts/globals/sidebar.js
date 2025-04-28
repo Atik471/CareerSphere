@@ -3,7 +3,9 @@ function initSidebar() {
   const main = document.getElementById("main");
   const sidebarLogo = document.getElementById("sidebar-logo");
   const toggleBtn = document.getElementById("toggle-btn");
-  const sidebarTooltips = document.querySelectorAll("#sidebar .sidebar-tooltip");
+  const sidebarTooltips = document.querySelectorAll(
+    "#sidebar .sidebar-tooltip"
+  );
 
   const applySidebarState = (isCollapsed) => {
     if (isCollapsed) {
@@ -40,6 +42,16 @@ function initSidebar() {
     applySidebarState(newState);
     localStorage.setItem("sidebarCollapsed", newState.toString());
   });
+
+  // const sidebarLinks = document.querySelectorAll(".sidebar-btn a");
+
+  // sidebarLinks.forEach((link) => {
+  //   link.addEventListener("click", function () {
+  //     sidebarLinks.forEach((l) => l.classList.remove("active"));
+
+  //     this.classList.add("active");
+  //   });
+  // });
 }
 
 window.initSidebar = initSidebar;
