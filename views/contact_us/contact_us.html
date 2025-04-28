@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../../styles/contact_us/contact_us.css">
+  <title>CareerSphere | Contact Us</title>
 </head>
 <body>
 
 <h2>Contact Us</h2>
 
-<form>
-<fieldset>
-<legend>Contact Information</legend>
-	<table> 
-		<tr>
-			<td>Full Name</td>
-			<td><input type="text" id="fullname" name="fullname" required><br></td>
-		</tr>
-		<tr>
-			<td>Email</td>
-			<td><input type="email" id="email" name="email" required><br></td>
-		</tr>
-		<tr>
-			<td>Message</td>
-			<td><textarea id="message" name="message" rows="4" required></textarea><br></td>
-		</tr>
-		<tr>
-			<td><input type="reset" value="Reset"></td>
-			<td><input type="submit" value="Submit"></td>
-		</tr>
-	</table>
-</fieldset>
+<form onsubmit="return validateForm(event)">
+  <fieldset>
+    <legend>Contact Information</legend>
+    <table>
+      <tr>
+        <td><label for="fullname">Full Name</label></td>
+        <td><input type="text" id="fullname" name="fullname" /></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td><input type="email" id="email" name="email" /></td>
+      </tr>
+      <tr>
+        <td><label for="message">Message</label></td>
+        <td><textarea id="message" name="message" rows="4" ></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="button-row">
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+          </div>
+        </td>
+      </tr>
+    </table>
+    <p id="error"></p>
+  </fieldset>
 </form>
+
 <script src="../../scripts/contact_us/contact_us.js"></script>
 </body>
 </html>
