@@ -194,3 +194,12 @@
   font-size: 0.8rem;
   color: #444;
 }
+
+#month-selector {
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+}
+
