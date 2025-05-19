@@ -14,7 +14,7 @@ if (!isset($_SESSION['email'])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Company Profile</title>
- <link rel="stylesheet" href="../../styles/company_profile/company_profile.css">
+ <link rel="stylesheet" href="../../assets/styles/company_profile/company_profile.css">
 </head>
 <body>
 

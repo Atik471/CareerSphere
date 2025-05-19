@@ -15,10 +15,10 @@ if (!isset($_SESSION['email'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- styles -->
-    <link rel="stylesheet" href="../../styles/global.css" />
-    <link rel="stylesheet" href="../../styles/sidebar/sidebar.css" />
-    <link rel="stylesheet" href="../../styles/navbar/navbar.css" />
-    <link rel="stylesheet" href="../../styles/application/application.css" />
+    <link rel="stylesheet" href="../../assets/styles/global.css" />
+    <link rel="stylesheet" href="../../assets/styles/sidebar/sidebar.css" />
+    <link rel="stylesheet" href="../../assets/styles/navbar/navbar.css" />
+    <link rel="stylesheet" href="../../assets/styles/application/application.css" />
 
     <title>CareerSphere | Application</title>
   </head>

@@ -13,10 +13,10 @@ if (isset($_SESSION['email'])) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../styles/global.css" />
+  <link rel="stylesheet" href="../../assets/styles/global.css" />
   <link
     rel="stylesheet"
-    href="../../styles/user_authentication/user_authentication.css" />
+    href="../../assets/styles/user_authentication/user_authentication.css" />
   <title>CareerSphere | Login</title>
 </head>
 
@@ -71,8 +71,8 @@ if (isset($_SESSION['email'])) {
     </div>
   </section>
 
-  <script src="../../scripts/user_authentication/login.js"></script>
-  <script src="../../scripts/user_authentication/toggle_password.js"></script>
+  <script src="../../assets/scripts/user_authentication/login.js"></script>
+  <script src="../../assets/scripts/user_authentication/toggle_password.js"></script>
 </body>
 
 </html>

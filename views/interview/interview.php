@@ -15,10 +15,10 @@ if (!isset($_SESSION['email'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- styles -->
-    <link rel="stylesheet" href="../../styles/global.css" />
-    <link rel="stylesheet" href="../../styles/sidebar/sidebar.css" />
-    <link rel="stylesheet" href="../../styles/navbar/navbar.css" />
-    <link rel="stylesheet" href="../../styles/interview/interview.css" />
+    <link rel="stylesheet" href="../../assets/styles/global.css" />
+    <link rel="stylesheet" href="../../assets/styles/sidebar/sidebar.css" />
+    <link rel="stylesheet" href="../../assets/styles/navbar/navbar.css" />
+    <link rel="stylesheet" href="../../assets/styles/interview/interview.css" />
 
     <title>CareerSphere | Interview</title>
   </head>
@@ -60,8 +60,8 @@ if (!isset($_SESSION['email'])) {
     </div>
 
     <!-- scripts -->
-    <script src="../../scripts/globals/mainLayout.js"></script>
-    <script src="../../scripts/interview/interview.js"></script>
-    <script src="../../scripts/globals/sidebar.js" defer></script>
+    <script src="../../assets/scripts/globals/mainLayout.js"></script>
+    <script src="../../assets/scripts/interview/interview.js"></script>
+    <script src="../../assets/scripts/globals/sidebar.js" defer></script>
   </body>
 </html>
