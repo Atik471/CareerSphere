@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['email'])) {
+    // Not logged in, redirect to login
+    header("Location: /CareerSphere/views/user_authentication/login.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
