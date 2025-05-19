@@ -31,7 +31,7 @@ const loginValidation = () => {
 const loginForm = document.getElementById("login-form");
 
 loginForm.addEventListener("submit", (event) => {
-  event.preventDefault();
+  // event.preventDefault();
 
   if (loginValidation()) {
     return true;
