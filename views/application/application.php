@@ -2,7 +2,6 @@
 session_start();
 
 if (!isset($_SESSION['email'])) {
-    // Not logged in, redirect to login
     header("Location: /CareerSphere/views/user_authentication/login.php");
     exit;
 }
@@ -65,8 +64,8 @@ if (!isset($_SESSION['email'])) {
     </div>
 
     <!-- scripts -->
-    <script src="../../scripts/globals/mainLayout.js"></script>
-    <script src="../../scripts/application/application.js"></script>
-    <script src="../../scripts/globals/sidebar.js" defer></script>
+    <script src="../../assets/scripts/globals/mainLayout.js"></script>
+    <script src="../../assets/scripts/application/application.js"></script>
+    <script src="../../assets/scripts/globals/sidebar.js" defer></script>
   </body>
 </html>
