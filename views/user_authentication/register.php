@@ -17,10 +17,10 @@
         <div class="auth_header">
           <h2>Register</h2>
           <p>
-            or <a href="./login.html" class="auth_link">login to an account</a>
+            or <a href="./login.php" class="auth_link">login to an account</a>
           </p>
         </div>
-        <form id="register-form">
+        <form id="register-form" action="/CareerSphere/controller/Register.php" method="POST">
           <input
             type="text"
             id="username"

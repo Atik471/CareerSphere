@@ -27,7 +27,7 @@ if (isset($_SESSION['email'])) {
       <div class="auth_header">
         <h2>Login</h2>
         <p>
-          or <a href="./register.html" class="auth_link">create an account</a>
+          or <a href="./register.php" class="auth_link">create an account</a>
         </p>
       </div>
       <form id="login-form" action="/CareerSphere/controller/auth.php" method="POST" enctype="">

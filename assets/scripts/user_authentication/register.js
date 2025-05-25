@@ -56,7 +56,7 @@ const registerValidation = () => {
   const registerForm = document.getElementById("register-form");
   
   registerForm.addEventListener("submit", (event) => {
-    event.preventDefault();
+    // event.preventDefault();
   
     if (registerValidation()) {
       return true
