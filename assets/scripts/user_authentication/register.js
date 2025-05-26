@@ -9,7 +9,6 @@ const registerValidation = () => {
     const passwordError = document.getElementById("password-error");
     const confirmPasswordError = document.getElementById("confirm-password-error");
   
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   
     let isValid = true;
   
@@ -22,9 +21,6 @@ const registerValidation = () => {
   
     if (email === "") {
       emailError.innerText = "Email must not be empty";
-      isValid = false;
-    } else if (!emailRegex.test(email)) {
-      emailError.innerText = "Invalid email format";
       isValid = false;
     } else {
       emailError.innerText = "";

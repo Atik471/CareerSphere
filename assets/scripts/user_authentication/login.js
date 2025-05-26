@@ -4,9 +4,7 @@ const loginValidation = () => {
     const password = document.getElementById("password").value.trim();
     const emailError = document.getElementById("email-error");
     const passwordError = document.getElementById("password-error");
-    
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  
+      
     if (email === "") {
       emailError.innerText = "Email must not be empty";
       return false;
@@ -18,12 +16,7 @@ const loginValidation = () => {
       return false;
     }
     passwordError.innerText = "";
-  
-    if (!emailRegex.test(email)) {
-      emailError.innerText = "Invalid email format";
-    //   return false;
-    }
-    
+
     return true;
   };
   
