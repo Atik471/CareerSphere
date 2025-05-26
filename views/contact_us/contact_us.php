@@ -10,7 +10,7 @@
 
 <h2>Contact Us</h2>
 
-<form onsubmit="return validateForm(event)" enctype="">
+<form onsubmit="return validateForm(event)" enctype="" method="POST" action="/CareerSphere/controller/contact.php" >
   <fieldset>
     <legend id="table-title">Contact Information</legend>
     <table>
